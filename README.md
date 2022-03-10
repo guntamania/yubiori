@@ -9,4 +9,8 @@ cd path/to/yubiori
 http-server
 ```
 
+# demo
+
+https://stoic-hermann-4b322c.netlify.app
+
 
