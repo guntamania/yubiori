@@ -18,7 +18,10 @@ function initLandingPage() {
             return;
         }
         const epochDate = userDate.getTime() / 1000;
-        document.location.href = "/remain?text=" + userText + "&date=" + epochDate;
+        const url = "/remain?text=" + userText + "&date=" + epochDate;
+        console.log(url);
+        document.location.href = url;
+        return false;
     });
 }
 
@@ -27,7 +30,7 @@ function initContentPage() {
     const userText = getParam('text');
 
     const now = Date.now() / 1000;
-    const remains = Math.floor((userDate - now) / (24 * 60 * 60));
+    const remains = Math.ceil((userDate - now) / (24 * 60 * 60));
 
     const userDateElement = $('<div>', { id:'hoge', class:'foo', text: remains + "日" });
     const userTextElement = $('<div>', { id:'text', class:'foo', text: userText });
