@@ -32,7 +32,7 @@ function initContentPage() {
     const now = Date.now() / 1000;
     const remains = Math.ceil((userDate - now) / (24 * 60 * 60));
 
-    const userDateElement = $('<div>', { id:'hoge', class:'foo', text: remains + "日" });
+    const userDateElement = $('<div>', { id:'remain_days', class:'days', text: remains + "日" });
     const userTextElement = $('<div>', { id:'text', class:'foo', text: userText });
     $("#main_wrapper").append(userTextElement);
     $("#main_wrapper").append(userDateElement);
