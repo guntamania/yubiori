@@ -1,9 +1,9 @@
 .foo {
     position: absolute;
     top: 0;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: white;
+    margin-top: 20px;
+    margin-left: 60px;
+    color: #D8DDFD;
 }
 
 #remain_days {

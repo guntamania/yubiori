@@ -1,21 +1,43 @@
+body {
+    background-color: #0c1030;
+    color: #D8DDFD;
+}
+
+#create_button {
+    border-radius: 5px;
+    border: solid 2px;
+    background-color: #00000000;
+    color: orange;
+}
+
+input {
+    color: #D8DDFD;
+    border-radius: 5px;
+    border: solid 2px;
+    background-color: #00000000;
+}
+
+label {
+    font-size: small;
+}
+
 .main-content {
     margin: auto;
     width: 80%;
 }
 
 div.home-menu {
-    background-color: #0032a8;
-
+    border-bottom: solid;
+    border-color: #3F4464;
 }
 
 h1.pure-menu-heading {
-    color: #ffffff;
+    color: #F1F6FF;
 }
 
 .splash-container {
-    /* position: absolute; */
     height: 50%;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
 button.pure-button {
