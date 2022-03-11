@@ -5,26 +5,32 @@
  <title>YUBIORI</title>
  <meta name="description" content="日数をカウントす Web ツール">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
  <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/style.css">
  <script src="js/main.js"></script>
  </head>
  <body>
-   <div class="main_content">
-     <h1>YUBIORI</h1>
-     <form class="pure-form pure-form-stacked">
-       <fieldset>
-         <label class="pure-input-1" for="your_text">表示するテキスト: </label>
-         <input class="pure-input-1" type="text" name="your_text" id="your_text" value=""  placeholder="締め切りまで">
-         <label class="pure-input-1" for="your_date">カウントダウンする日付: </label>
-         <input class="pure-input-1" type="text" id="datepicker">
-         <button class="pure-input-1 pure-button pure-button-primary" id="create_button">作成</button>
-       </fieldset>
-     </form>
+   <div class="header">
+     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+       <h1 class="pure-menu-heading">YUBIORI</h1>
+    </div>
+   </div>
+   <div class="main-content">
+     <div class="splash-container">
+       <form class="pure-form pure-form-stacked">
+         <fieldset>
+           <label class="pure-input-1 input-label" for="your_text">表示するテキスト: </label>
+           <input class="pure-input-1" type="text" name="your_text" id="your_text" value=""  placeholder="締め切りまで">
+           <label class="pure-input-1 input-label" for="your_date">カウントダウンする日付: </label>
+           <input class="pure-input-1" type="text" id="datepicker">
+           <button class="pure-input-1 pure-button pure-button-primary" id="create_button">作成</button>
+         </fieldset>
+       </form>
+     </div>
    </div>
  </body>
 </html>

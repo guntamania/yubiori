@@ -1,8 +1,31 @@
-.main_content {
-    margin-left: auto;
-    margin-right: auto;
+.main-content {
+    margin: auto;
     width: 80%;
 }
+
+div.home-menu {
+    background-color: #0032a8;
+
+}
+
+h1.pure-menu-heading {
+    color: #ffffff;
+}
+
+.splash-container {
+    /* position: absolute; */
+    height: 50%;
+    margin-top: 100px;
+}
+
+button.pure-button {
+    margin-top: 20px;
+}
+
+.input-label {
+    margin-top: 20px !important;
+}
+
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -11,7 +34,7 @@
  */
 @media (min-width: 48em) {
     /* We increase the body font size */
-    .main_content {
-        width: 78%;
+    .main-content {
+        width: 40em;
     }
 }
